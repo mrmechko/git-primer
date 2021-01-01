@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-  <!-- 2021-01-01 Fri 16:37 -->
+  <!-- 2021-01-01 Fri 16:40 -->
   <meta http-equiv="Content-Type" content=
   "text/html; charset=us-ascii" />
   <meta name="viewport" content=
@@ -250,130 +250,130 @@
       <div id="text-table-of-contents">
         <ul>
           <li>
-            <a href="#org96a8711">What is git and why should we use
+            <a href="#org5a55d3b">What is git and why should we use
             it?</a>
 
             <ul>
-              <li><a href="#org332aa86">Motivation:
+              <li><a href="#org080e1a9">Motivation:
               Checkpoints</a></li>
             </ul>
           </li>
 
-          <li><a href="#orgc4c56a5">What is the difference between
+          <li><a href="#org98dcd35">What is the difference between
           git and GitHub?</a></li>
 
-          <li><a href="#org22fd4fa">Anatomy of a git repo</a></li>
+          <li><a href="#org6629db2">Anatomy of a git repo</a></li>
 
           <li>
-            <a href="#org8e2be95">Basic Operations</a>
+            <a href="#orga85ce72">Basic Operations</a>
 
             <ul>
-              <li><a href="#org4ea4fcf">Copying a repo - <code>git
+              <li><a href="#orgaf75269">Copying a repo - <code>git
               clone</code></a></li>
 
-              <li><a href="#org7f01894">Creating a repo - <code>git
+              <li><a href="#org8fc8d62">Creating a repo - <code>git
               init</code></a></li>
 
-              <li><a href="#org6b61cb3">Staging - <code>git
+              <li><a href="#orgc34ceca">Staging - <code>git
               add</code></a></li>
 
-              <li><a href="#org77f698d">Commit - <code>git
+              <li><a href="#org372bce9">Commit - <code>git
               commit</code></a></li>
 
               <li>
-                <a href="#org0999131">Receive - <code>git
+                <a href="#org49f7ba9">Receive - <code>git
                 pull</code></a>
 
                 <ul>
-                  <li><a href="#org952bb62">Conflicts</a></li>
+                  <li><a href="#org103b3fe">Conflicts</a></li>
                 </ul>
               </li>
 
               <li>
-                <a href="#org5ec70d4">Send - <code>git
+                <a href="#orgaf08a4e">Send - <code>git
                 push</code></a>
 
                 <ul>
-                  <li><a href="#org2ca3c20">Conflicts</a></li>
+                  <li><a href="#org4966188">Conflicts</a></li>
                 </ul>
               </li>
             </ul>
           </li>
 
           <li>
-            <a href="#org1b71781">Branching and Merging</a>
+            <a href="#org4723641">Branching and Merging</a>
 
             <ul>
-              <li><a href="#org4644a54">Creating branches -
+              <li><a href="#orgcce9684">Creating branches -
               <code>git branch</code></a></li>
 
-              <li><a href="#orge8ae5e4">A sample branching
+              <li><a href="#orgf8e885d">A sample branching
               paradigm</a></li>
 
-              <li><a href="#orgb52f554">Conflicts!</a></li>
+              <li><a href="#org798b674">Conflicts!</a></li>
 
-              <li><a href="#org6760b02">Pull Requests</a></li>
+              <li><a href="#org0ba54d0">Pull Requests</a></li>
             </ul>
           </li>
 
           <li>
-            <a href="#orgb8af3f3">Undoing things</a>
+            <a href="#org4621851">Undoing things</a>
 
             <ul>
-              <li><a href="#org263074c">Temporary - <code>git
+              <li><a href="#orgcfae021">Temporary - <code>git
               stash</code></a></li>
 
-              <li><a href="#org488b13c">Exploratory - <code>git
+              <li><a href="#org0a4762b">Exploratory - <code>git
               checkout</code></a></li>
 
-              <li><a href="#org98b6edf">UNDO! UNDO!! - <code>git
+              <li><a href="#org8800bba">UNDO! UNDO!! - <code>git
               revert</code></a></li>
             </ul>
           </li>
 
           <li>
-            <a href="#org6dafa31">Hints and FAQs</a>
+            <a href="#org5370d50">Hints and FAQs</a>
 
             <ul>
               <li>
-                <a href="#org35a7f47">Some strategies to avoid
+                <a href="#orgcb83a76">Some strategies to avoid
                 panic.</a>
 
                 <ul>
-                  <li><a href="#org8e46dbd">Commit
+                  <li><a href="#org920ada0">Commit
                   messages</a></li>
 
-                  <li><a href="#org722f5d2">Work on your own
+                  <li><a href="#orgcb2b4bf">Work on your own
                   branch</a></li>
 
-                  <li><a href="#org5556d85">Test before you
+                  <li><a href="#org89d1ccf">Test before you
                   merge</a></li>
 
-                  <li><a href="#org7a33114">Avoiding
+                  <li><a href="#org6330273">Avoiding
                   Conflicts</a></li>
                 </ul>
               </li>
 
-              <li><a href="#org0d23867">Help, I accidentally added
+              <li><a href="#org8a405e9">Help, I accidentally added
               or committed something I shouldn&rsquo;t
               have!</a></li>
 
-              <li><a href="#orge4e2030">Help, I&rsquo;ve made some
+              <li><a href="#orgd781bfc">Help, I&rsquo;ve made some
               changes but I want to move them out of the
               way!</a></li>
 
-              <li><a href="#org9c08081">Next Time</a></li>
+              <li><a href="#org7c72772">Next Time</a></li>
             </ul>
           </li>
         </ul>
       </div>
     </div>
 
-    <div id="outline-container-org96a8711" class="outline-2">
-      <h2 id="org96a8711">What is git and why should we use
+    <div id="outline-container-org5a55d3b" class="outline-2">
+      <h2 id="org5a55d3b">What is git and why should we use
       it?</h2>
 
-      <div class="outline-text-2" id="text-org96a8711">
+      <div class="outline-text-2" id="text-org5a55d3b">
         <div class="org-center">
           <p><img class='invertible' src=
           'https://imgs.xkcd.com/comics/git.png' title=
@@ -393,10 +393,10 @@
         file contents.</p>
       </div>
 
-      <div id="outline-container-org332aa86" class="outline-3">
-        <h3 id="org332aa86">Motivation: Checkpoints</h3>
+      <div id="outline-container-org080e1a9" class="outline-3">
+        <h3 id="org080e1a9">Motivation: Checkpoints</h3>
 
-        <div class="outline-text-3" id="text-org332aa86">
+        <div class="outline-text-3" id="text-org080e1a9">
           <p>You have been writing code for hours. You&rsquo;ve got
           into a good flow. What started off as a few functions in
           a single file has expanded into dozens of functions and
@@ -436,11 +436,11 @@
       </div>
     </div>
 
-    <div id="outline-container-orgc4c56a5" class="outline-2">
-      <h2 id="orgc4c56a5">What is the difference between git and
+    <div id="outline-container-org98dcd35" class="outline-2">
+      <h2 id="org98dcd35">What is the difference between git and
       GitHub?</h2>
 
-      <div class="outline-text-2" id="text-orgc4c56a5">
+      <div class="outline-text-2" id="text-org98dcd35">
         <p>While <code>git</code> is the underlying software that
         performs version control, <a href=
         "https:github.com">Github</a> is a website where users can
@@ -456,10 +456,10 @@
       </div>
     </div>
 
-    <div id="outline-container-org22fd4fa" class="outline-2">
-      <h2 id="org22fd4fa">Anatomy of a git repo</h2>
+    <div id="outline-container-org6629db2" class="outline-2">
+      <h2 id="org6629db2">Anatomy of a git repo</h2>
 
-      <div class="outline-text-2" id="text-org22fd4fa">
+      <div class="outline-text-2" id="text-org6629db2">
         <p>A git repository, or repo for short, is just a normal
         folder with a <code>.git</code> folder containing metadata.
         The <code>.git</code> folder will contain information about
@@ -496,19 +496,19 @@
       </div>
     </div>
 
-    <div id="outline-container-org8e2be95" class="outline-2">
-      <h2 id="org8e2be95">Basic Operations</h2>
+    <div id="outline-container-orga85ce72" class="outline-2">
+      <h2 id="orga85ce72">Basic Operations</h2>
 
-      <div class="outline-text-2" id="text-org8e2be95">
+      <div class="outline-text-2" id="text-orga85ce72">
         <p>In this section, we will outline the basic operations
         for interacting with git repos</p>
       </div>
 
-      <div id="outline-container-org4ea4fcf" class="outline-3">
-        <h3 id="org4ea4fcf">Copying a repo - <code>git
+      <div id="outline-container-orgaf75269" class="outline-3">
+        <h3 id="orgaf75269">Copying a repo - <code>git
         clone</code></h3>
 
-        <div class="outline-text-3" id="text-org4ea4fcf">
+        <div class="outline-text-3" id="text-orgaf75269">
           <p>In order to use an existing repo, you must first
           <i>clone</i> it to your local machine. The <code>git
           clone</code> command takes the location of a repo and
@@ -522,11 +522,11 @@
         </div>
       </div>
 
-      <div id="outline-container-org7f01894" class="outline-3">
-        <h3 id="org7f01894">Creating a repo - <code>git
+      <div id="outline-container-org8fc8d62" class="outline-3">
+        <h3 id="org8fc8d62">Creating a repo - <code>git
         init</code></h3>
 
-        <div class="outline-text-3" id="text-org7f01894">
+        <div class="outline-text-3" id="text-org8fc8d62">
           <p>To create a repo, you would perform a <code>git
           init</code>. This creates a <code>.git</code> folder
           inside the base directory of your repo with an empty
@@ -539,10 +539,10 @@
         </div>
       </div>
 
-      <div id="outline-container-org6b61cb3" class="outline-3">
-        <h3 id="org6b61cb3">Staging - <code>git add</code></h3>
+      <div id="outline-container-orgc34ceca" class="outline-3">
+        <h3 id="orgc34ceca">Staging - <code>git add</code></h3>
 
-        <div class="outline-text-3" id="text-org6b61cb3">
+        <div class="outline-text-3" id="text-orgc34ceca">
           <p>Once you&rsquo;ve created or cloned your repo and
           edited some files, you will want to add your changes to
           the repo&rsquo;s history. This is a two step process. The
@@ -555,10 +555,10 @@
         </div>
       </div>
 
-      <div id="outline-container-org77f698d" class="outline-3">
-        <h3 id="org77f698d">Commit - <code>git commit</code></h3>
+      <div id="outline-container-org372bce9" class="outline-3">
+        <h3 id="org372bce9">Commit - <code>git commit</code></h3>
 
-        <div class="outline-text-3" id="text-org77f698d">
+        <div class="outline-text-3" id="text-org372bce9">
           <p>To make your changes (semi) permanent, you make a
           commit. As well as staged changes, a commit requires a
           commit message describing its contents. It is important
@@ -574,10 +574,10 @@
         </div>
       </div>
 
-      <div id="outline-container-org0999131" class="outline-3">
-        <h3 id="org0999131">Receive - <code>git pull</code></h3>
+      <div id="outline-container-org49f7ba9" class="outline-3">
+        <h3 id="org49f7ba9">Receive - <code>git pull</code></h3>
 
-        <div class="outline-text-3" id="text-org0999131">
+        <div class="outline-text-3" id="text-org49f7ba9">
           <p>In order to get updates that have been sent by others
           (or by you from other machines), you would perform a
           <code>git pull</code>. This gathers all the commits that
@@ -585,10 +585,10 @@
           pull and sends them to you.</p>
         </div>
 
-        <div id="outline-container-org952bb62" class="outline-4">
-          <h4 id="org952bb62">Conflicts</h4>
+        <div id="outline-container-org103b3fe" class="outline-4">
+          <h4 id="org103b3fe">Conflicts</h4>
 
-          <div class="outline-text-4" id="text-org952bb62">
+          <div class="outline-text-4" id="text-org103b3fe">
             <p>In some cases, the commits on the remote server may
             overlap with your own changes. If this is the case,
             you&rsquo;ll have to perform a <code>merge</code>.
@@ -599,10 +599,10 @@
         </div>
       </div>
 
-      <div id="outline-container-org5ec70d4" class="outline-3">
-        <h3 id="org5ec70d4">Send - <code>git push</code></h3>
+      <div id="outline-container-orgaf08a4e" class="outline-3">
+        <h3 id="orgaf08a4e">Send - <code>git push</code></h3>
 
-        <div class="outline-text-3" id="text-org5ec70d4">
+        <div class="outline-text-3" id="text-orgaf08a4e">
           <p>Once you&rsquo;ve made some commits, you&rsquo;ll want
           to synchronize them with your remote repo. In order to do
           this, you&rsquo;ll need to perform a <code>git
@@ -611,10 +611,10 @@
           add.</p>
         </div>
 
-        <div id="outline-container-org2ca3c20" class="outline-4">
-          <h4 id="org2ca3c20">Conflicts</h4>
+        <div id="outline-container-org4966188" class="outline-4">
+          <h4 id="org4966188">Conflicts</h4>
 
-          <div class="outline-text-4" id="text-org2ca3c20">
+          <div class="outline-text-4" id="text-org4966188">
             <p>Sometimes as you try to push, your remote repository
             will notify you that it has received a push from
             someone else since you last pulled from the repo. In
@@ -659,10 +659,10 @@ hint: See the <span style=
       </div>
     </div>
 
-    <div id="outline-container-org1b71781" class="outline-2">
-      <h2 id="org1b71781">Branching and Merging</h2>
+    <div id="outline-container-org4723641" class="outline-2">
+      <h2 id="org4723641">Branching and Merging</h2>
 
-      <div class="outline-text-2" id="text-org1b71781">
+      <div class="outline-text-2" id="text-org4723641">
         <div class="org-center">
           <p><img class='invertible' src=
           'https://imgs.xkcd.com/comics/algorithms.png' title=
@@ -693,11 +693,11 @@ hint: See the <span style=
         <i>NOT</i> mean that the combined files will work!</p>
       </div>
 
-      <div id="outline-container-org4644a54" class="outline-3">
-        <h3 id="org4644a54">Creating branches - <code>git
+      <div id="outline-container-orgcce9684" class="outline-3">
+        <h3 id="orgcce9684">Creating branches - <code>git
         branch</code></h3>
 
-        <div class="outline-text-3" id="text-org4644a54">
+        <div class="outline-text-3" id="text-orgcce9684">
           <p><code>git branch</code> allows you to create a new
           branch from the current commit. This does not create any
           changes in the repository&rsquo;s history. Instead, you
@@ -709,10 +709,10 @@ hint: See the <span style=
         </div>
       </div>
 
-      <div id="outline-container-orge8ae5e4" class="outline-3">
-        <h3 id="orge8ae5e4">A sample branching paradigm</h3>
+      <div id="outline-container-orgf8e885d" class="outline-3">
+        <h3 id="orgf8e885d">A sample branching paradigm</h3>
 
-        <div class="outline-text-3" id="text-orge8ae5e4">
+        <div class="outline-text-3" id="text-orgf8e885d">
           <p>Most repositories have a single branch to start with,
           called <code>main</code><sup><a id="fnr.4" class=
           "footref" href="#fn.4" name="fnr.4">4</a></sup>. This
@@ -747,10 +747,10 @@ hint: See the <span style=
         </div>
       </div>
 
-      <div id="outline-container-orgb52f554" class="outline-3">
-        <h3 id="orgb52f554">Conflicts!</h3>
+      <div id="outline-container-org798b674" class="outline-3">
+        <h3 id="org798b674">Conflicts!</h3>
 
-        <div class="outline-text-3" id="text-orgb52f554">
+        <div class="outline-text-3" id="text-org798b674">
           <div class="org-center">
             <p><img class='invertible' src=
             'https://imgs.xkcd.com/comics/computer_problems.png'
@@ -818,10 +818,10 @@ This line is a conflict.
         </div>
       </div>
 
-      <div id="outline-container-org6760b02" class="outline-3">
-        <h3 id="org6760b02">Pull Requests</h3>
+      <div id="outline-container-org0ba54d0" class="outline-3">
+        <h3 id="org0ba54d0">Pull Requests</h3>
 
-        <div class="outline-text-3" id="text-org6760b02">
+        <div class="outline-text-3" id="text-org0ba54d0">
           <p>Pull requests are a special feature provided by some
           git-hosting services (eg <a href=
           "https://github.com">github</a>, <a href=
@@ -841,19 +841,19 @@ This line is a conflict.
       </div>
     </div>
 
-    <div id="outline-container-orgb8af3f3" class="outline-2">
-      <h2 id="orgb8af3f3">Undoing things</h2>
+    <div id="outline-container-org4621851" class="outline-2">
+      <h2 id="org4621851">Undoing things</h2>
 
-      <div class="outline-text-2" id="text-orgb8af3f3">
+      <div class="outline-text-2" id="text-org4621851">
         <p>A very important part of git is the ability to undo
         commits that introduce errors or fall down
         rabbit-holes.</p>
       </div>
 
-      <div id="outline-container-org263074c" class="outline-3">
-        <h3 id="org263074c">Temporary - <code>git stash</code></h3>
+      <div id="outline-container-orgcfae021" class="outline-3">
+        <h3 id="orgcfae021">Temporary - <code>git stash</code></h3>
 
-        <div class="outline-text-3" id="text-org263074c">
+        <div class="outline-text-3" id="text-orgcfae021">
           <p><code>git stash</code> is a very useful command which
           takes any <i>uncommitted</i> changes you&rsquo;ve made to
           the working directory and stores them safely. You can
@@ -867,11 +867,11 @@ This line is a conflict.
         </div>
       </div>
 
-      <div id="outline-container-org488b13c" class="outline-3">
-        <h3 id="org488b13c">Exploratory - <code>git
+      <div id="outline-container-org0a4762b" class="outline-3">
+        <h3 id="org0a4762b">Exploratory - <code>git
         checkout</code></h3>
 
-        <div class="outline-text-3" id="text-org488b13c">
+        <div class="outline-text-3" id="text-org0a4762b">
           <p>A <code>git checkout</code> takes a commit reference
           and sets your <i>working directory</i> state to that
           commit<sup><a id="fnr.5" class="footref" href="#fn.5"
@@ -880,11 +880,11 @@ This line is a conflict.
         </div>
       </div>
 
-      <div id="outline-container-org98b6edf" class="outline-3">
-        <h3 id="org98b6edf">UNDO! UNDO!! - <code>git
+      <div id="outline-container-org8800bba" class="outline-3">
+        <h3 id="org8800bba">UNDO! UNDO!! - <code>git
         revert</code></h3>
 
-        <div class="outline-text-3" id="text-org98b6edf">
+        <div class="outline-text-3" id="text-org8800bba">
           <p>Since each commit in git is a &rsquo;change&rsquo;,
           the natural way to undo things is to make the opposite
           change. <code>git revert</code> will construct the
@@ -897,20 +897,20 @@ This line is a conflict.
       </div>
     </div>
 
-    <div id="outline-container-org6dafa31" class="outline-2">
-      <h2 id="org6dafa31">Hints and FAQs</h2>
+    <div id="outline-container-org5370d50" class="outline-2">
+      <h2 id="org5370d50">Hints and FAQs</h2>
 
-      <div class="outline-text-2" id="text-org6dafa31"></div>
+      <div class="outline-text-2" id="text-org5370d50"></div>
 
-      <div id="outline-container-org35a7f47" class="outline-3">
-        <h3 id="org35a7f47">Some strategies to avoid panic.</h3>
+      <div id="outline-container-orgcb83a76" class="outline-3">
+        <h3 id="orgcb83a76">Some strategies to avoid panic.</h3>
 
-        <div class="outline-text-3" id="text-org35a7f47"></div>
+        <div class="outline-text-3" id="text-orgcb83a76"></div>
 
-        <div id="outline-container-org8e46dbd" class="outline-4">
-          <h4 id="org8e46dbd">Commit messages</h4>
+        <div id="outline-container-org920ada0" class="outline-4">
+          <h4 id="org920ada0">Commit messages</h4>
 
-          <div class="outline-text-4" id="text-org8e46dbd">
+          <div class="outline-text-4" id="text-org920ada0">
             <div class="org-center">
               <p><img class='invertible' src=
               'https://imgs.xkcd.com/comics/git_commit.png' title=
@@ -924,10 +924,10 @@ This line is a conflict.
           </div>
         </div>
 
-        <div id="outline-container-org722f5d2" class="outline-4">
-          <h4 id="org722f5d2">Work on your own branch</h4>
+        <div id="outline-container-orgcb2b4bf" class="outline-4">
+          <h4 id="orgcb2b4bf">Work on your own branch</h4>
 
-          <div class="outline-text-4" id="text-org722f5d2">
+          <div class="outline-text-4" id="text-orgcb2b4bf">
             <p>Merging your code with someone else&rsquo;s code is
             one of the more stressful processes when it comes to
             working in a team. While it is important to make sure
@@ -944,10 +944,10 @@ This line is a conflict.
           </div>
         </div>
 
-        <div id="outline-container-org5556d85" class="outline-4">
-          <h4 id="org5556d85">Test before you merge</h4>
+        <div id="outline-container-org89d1ccf" class="outline-4">
+          <h4 id="org89d1ccf">Test before you merge</h4>
 
-          <div class="outline-text-4" id="text-org5556d85">
+          <div class="outline-text-4" id="text-org89d1ccf">
             <p>Having a number of commits between working versions
             of code is not usually a problem, however, it is a good
             idea to test your code thoroughly before pushing or
@@ -955,10 +955,10 @@ This line is a conflict.
           </div>
         </div>
 
-        <div id="outline-container-org7a33114" class="outline-4">
-          <h4 id="org7a33114">Avoiding Conflicts</h4>
+        <div id="outline-container-org6330273" class="outline-4">
+          <h4 id="org6330273">Avoiding Conflicts</h4>
 
-          <div class="outline-text-4" id="text-org7a33114">
+          <div class="outline-text-4" id="text-org6330273">
             <p>The best way to deal with conflicts is to have as
             few of them as possible. Working on separate branches
             reduces the frequency with which you&rsquo;ll have to
@@ -976,11 +976,11 @@ This line is a conflict.
         </div>
       </div>
 
-      <div id="outline-container-org0d23867" class="outline-3">
-        <h3 id="org0d23867">Help, I accidentally added or committed
+      <div id="outline-container-org8a405e9" class="outline-3">
+        <h3 id="org8a405e9">Help, I accidentally added or committed
         something I shouldn&rsquo;t have!</h3>
 
-        <div class="outline-text-3" id="text-org0d23867">
+        <div class="outline-text-3" id="text-org8a405e9">
           <p><code>git rm</code> will untrack a file that you have
           committed to the repository by accident. If you
           don&rsquo;t want to delete the file altogether, you can
@@ -988,19 +988,19 @@ This line is a conflict.
         </div>
       </div>
 
-      <div id="outline-container-orge4e2030" class="outline-3">
-        <h3 id="orge4e2030">Help, I&rsquo;ve made some changes but
+      <div id="outline-container-orgd781bfc" class="outline-3">
+        <h3 id="orgd781bfc">Help, I&rsquo;ve made some changes but
         I want to move them out of the way!</h3>
 
-        <div class="outline-text-3" id="text-orge4e2030">
+        <div class="outline-text-3" id="text-orgd781bfc">
           <p><code>git stash</code>!</p>
         </div>
       </div>
 
-      <div id="outline-container-org9c08081" class="outline-3">
-        <h3 id="org9c08081">Next Time</h3>
+      <div id="outline-container-org7c72772" class="outline-3">
+        <h3 id="org7c72772">Next Time</h3>
 
-        <div class="outline-text-3" id="text-org9c08081">
+        <div class="outline-text-3" id="text-org7c72772">
           <p>In the next article, we will discuss some of the
           additional features GitHub brings to git. Pull requests,
           issues, project boards, and continuous integration are
@@ -1085,7 +1085,7 @@ This line is a conflict.
   <div id="postamble" class="status">
     <p class="author">Author: Rik Bose</p>
 
-    <p class="date">Created: 2021-01-01 Fri 16:37</p>
+    <p class="date">Created: 2021-01-01 Fri 16:40</p>
   </div>
 </body>
 </html>

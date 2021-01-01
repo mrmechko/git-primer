@@ -1,8 +1,6 @@
 #+TITLE: Yet Another Git Primer
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
-#+begin_comment
-#+SETUPFILE: ~/Downloads/theme-readtheorg.setup
-#+END_comment
+#+EXPORT_FILE_NAME: index.html
 #+OPTIONS: num:nil date:nil
 
 * What is git and why should we use it?

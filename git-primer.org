@@ -164,3 +164,5 @@ In the next article, we will discuss some of the additional features GitHub brin
 [fn:squashing] Sometimes it might feel like committing too often will make the history look messy. There are advanced commands such as =git rebase -i= which allow you to rewrite the history. This is a dangerous operation and can break things for other people. There are very few ways to completely destroy a git repo and misuse of history rewriting is basically it.
 [fn:HEAD] If you checkout a specific commit instead of a branch, you might get a scary looking message informing you that you are in a ~detached HEAD state~. [[https://www.cloudbees.com/blog/git-detached-head][This]] is a good guide explaining how to handle this.
 [fn:master] The default branch on many repos you see will be called =master=. In a more recent attempt to avoid slave/master metaphors in computer science, Github and many others have encouraged people to use the name =main= instead.
+** Comics
+All comics were taken from the fabulous [[https://xkcd.com][XKCD]].

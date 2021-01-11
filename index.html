@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-  <!-- 2021-01-01 Fri 17:27 -->
+  <!-- 2021-01-10 Sun 20:27 -->
   <meta http-equiv="Content-Type" content=
   "text/html; charset=us-ascii" />
   <meta name="viewport" content=
@@ -250,137 +250,127 @@
       <div id="text-table-of-contents">
         <ul>
           <li>
-            <a href="#org255cc19">What is git and why should we use
+            <a href="#orgfb0585c">What is git and why should we use
             it?</a>
 
             <ul>
-              <li><a href="#orgc1e41a1">Motivation:
+              <li><a href="#org926c7db">Motivation:
               Checkpoints</a></li>
             </ul>
           </li>
 
-          <li><a href="#org03b1818">What is the difference between
+          <li><a href="#org074587d">What is the difference between
           git and GitHub?</a></li>
 
-          <li><a href="#org202da8f">Anatomy of a git repo</a></li>
+          <li><a href="#orgc7f5792">Anatomy of a git repo</a></li>
 
           <li>
-            <a href="#org12c4a78">Basic Operations</a>
+            <a href="#orgc8f2151">Basic Operations</a>
 
             <ul>
-              <li><a href="#org1f65152">Copying a repo - <code>git
-              clone</code></a></li>
+              <li><a href="#orgdd18bea">Copying a repo -
+              <code>clone</code></a></li>
 
-              <li><a href="#org9d911d8">Creating a repo - <code>git
-              init</code></a></li>
+              <li><a href="#orgf1e0521">Creating a repo -
+              <code>init</code></a></li>
 
-              <li><a href="#org5963c2c">Staging - <code>git
-              add</code></a></li>
+              <li><a href="#orgebed50f">Staging -
+              <code>add</code></a></li>
 
-              <li><a href="#org8e130c9">Commit - <code>git
-              commit</code></a></li>
+              <li><a href="#org2cc2014">Commit -
+              <code>commit</code></a></li>
 
               <li>
-                <a href="#org5491423">Receive - <code>git
-                pull</code></a>
+                <a href="#orgcf7fa90">Receive -
+                <code>fetch/pull</code></a>
 
                 <ul>
-                  <li><a href="#orga903b96">Conflicts</a></li>
+                  <li><a href="#org5e8ab6c">Conflicts</a></li>
                 </ul>
               </li>
 
               <li>
-                <a href="#org8860e60">Send - <code>git
-                push</code></a>
+                <a href="#orgb3503f6">Send - <code>push</code></a>
 
                 <ul>
-                  <li><a href="#orgfdee6c4">Conflicts</a></li>
+                  <li><a href="#org25c1d90">Conflicts</a></li>
                 </ul>
               </li>
             </ul>
           </li>
 
           <li>
-            <a href="#org729cc4c">Branching and Merging</a>
+            <a href="#org8cf41d9">Branching and Merging</a>
 
             <ul>
-              <li><a href="#orga24475c">Creating branches -
-              <code>git branch</code></a></li>
-
-              <li><a href="#org261348e">A sample branching
+              <li><a href="#org6d0f145">A sample branching
               paradigm</a></li>
 
-              <li><a href="#org8b55457">Conflicts!</a></li>
+              <li><a href="#org838fe53">Creating branches -
+              <code>branch</code></a></li>
 
-              <li><a href="#org9e1f1f8">Pull Requests</a></li>
+              <li><a href="#org8759537">Exploratory -
+              <code>checkout</code></a></li>
+
+              <li><a href="#orgbada2e4">Conflicts!</a></li>
+
+              <li><a href="#org4dd0401">Pull Requests</a></li>
             </ul>
           </li>
 
           <li>
-            <a href="#orgc636f9b">Undoing things</a>
+            <a href="#orgb5fc2b8">Undoing things</a>
 
             <ul>
-              <li><a href="#org71bfd21">Temporary - <code>git
-              stash</code></a></li>
+              <li><a href="#org9a76f55">Temporary -
+              <code>stash</code></a></li>
 
-              <li><a href="#org0d7547f">Exploratory - <code>git
-              checkout</code></a></li>
-
-              <li><a href="#org290eddc">UNDO! UNDO!! - <code>git
-              revert</code></a></li>
+              <li><a href="#orgcfef600">UNDO! UNDO!! -
+              <code>revert</code></a></li>
             </ul>
           </li>
 
           <li>
-            <a href="#org24b6dd2">Hints and FAQs</a>
+            <a href="#org8b82158">Hints and FAQs</a>
 
             <ul>
               <li>
-                <a href="#orgbf50586">Some strategies to avoid
+                <a href="#org4eca2fe">Some strategies to avoid
                 panic.</a>
 
                 <ul>
-                  <li><a href="#org326433f">Commit
+                  <li><a href="#org5a6bc39">Commit
                   messages</a></li>
 
-                  <li><a href="#org788a2e0">Work on your own
+                  <li><a href="#orga5ad166">Work on your own
                   branch</a></li>
 
-                  <li><a href="#org0ba14de">Test before you
+                  <li><a href="#org3ebd5c7">Test before you
                   merge</a></li>
 
-                  <li><a href="#orgf2e6914">Avoiding
+                  <li><a href="#org7a1f6af">Avoiding
                   Conflicts</a></li>
                 </ul>
               </li>
 
-              <li><a href="#org7af27da">Help, I accidentally added
-              or committed something I shouldn&rsquo;t
-              have!</a></li>
+              <li><a href="#orga7e20aa">Help, I need to remove a
+              file from the repository!</a></li>
 
-              <li><a href="#orga042347">Help, I&rsquo;ve made some
-              changes but I want to move them out of the
-              way!</a></li>
-
-              <li><a href="#org28831e5">Next Time</a></li>
-
-              <li><a href="#org561f0df">Comics</a></li>
+              <li><a href="#orgae655b8">Help, I staged a file for
+              commit but I don&rsquo;t want to commit it!</a></li>
             </ul>
           </li>
         </ul>
       </div>
     </div>
 
-    <div id="outline-container-org255cc19" class="outline-2">
-      <h2 id="org255cc19">What is git and why should we use
+    <div id="outline-container-orgfb0585c" class="outline-2">
+      <h2 id="orgfb0585c">What is git and why should we use
       it?</h2>
 
-      <div class="outline-text-2" id="text-org255cc19">
+      <div class="outline-text-2" id="text-orgfb0585c">
         <div class="org-center">
-          <p><img class='invertible' src=
-          'https://imgs.xkcd.com/comics/git.png' title=
-          "If that doesn't fix it, git.txt contains the phone number of a friend of mine who understands git. Just wait through a few minutes of 'It's really pretty simple, just think of branches as...' and eventually you'll learn the commands that will fix everything."
-          alt='Git' /></p>
+          nil
         </div>
 
         <p>When you&rsquo;re working on a file or a document, it is
@@ -395,16 +385,16 @@
         file contents.</p>
       </div>
 
-      <div id="outline-container-orgc1e41a1" class="outline-3">
-        <h3 id="orgc1e41a1">Motivation: Checkpoints</h3>
+      <div id="outline-container-org926c7db" class="outline-3">
+        <h3 id="org926c7db">Motivation: Checkpoints</h3>
 
-        <div class="outline-text-3" id="text-orgc1e41a1">
+        <div class="outline-text-3" id="text-org926c7db">
           <p>You have been writing code for hours. You&rsquo;ve got
           into a good flow. What started off as a few functions in
           a single file has expanded into dozens of functions and
           classes in half a dozen files each consisting of several
           hundred lines of code. At least. You save the latest line
-          you wrote. After The Great Cherrry Coke Debacle in
+          you wrote. After The Great Cherry Coke Debacle in
           freshman year where you lost two pages of your final
           paper hours before the deadline, you&rsquo;re very
           diligent about saving. But it has started to occur to you
@@ -438,11 +428,11 @@
       </div>
     </div>
 
-    <div id="outline-container-org03b1818" class="outline-2">
-      <h2 id="org03b1818">What is the difference between git and
+    <div id="outline-container-org074587d" class="outline-2">
+      <h2 id="org074587d">What is the difference between git and
       GitHub?</h2>
 
-      <div class="outline-text-2" id="text-org03b1818">
+      <div class="outline-text-2" id="text-org074587d">
         <p>While <code>git</code> is the underlying software that
         performs version control, <a href=
         "https:github.com">Github</a> is a website where users can
@@ -458,18 +448,18 @@
       </div>
     </div>
 
-    <div id="outline-container-org202da8f" class="outline-2">
-      <h2 id="org202da8f">Anatomy of a git repo</h2>
+    <div id="outline-container-orgc7f5792" class="outline-2">
+      <h2 id="orgc7f5792">Anatomy of a git repo</h2>
 
-      <div class="outline-text-2" id="text-org202da8f">
+      <div class="outline-text-2" id="text-orgc7f5792">
         <p>A git repository, or repo for short, is just a normal
-        folder with a <code>.git</code> folder containing metadata.
-        The <code>.git</code> folder will contain information about
-        previous commits, branches, and where the remote repos are
-        located. Most repos will also contain one or more files
-        called <code>.gitignore</code>. A <code>.gitignore</code>
-        file tells git which files to avoid adding to the
-        repository to prevent mistakes. You might add things like
+        folder with a subfolder named <code>.git/</code> containing
+        metadata. The <code>.git</code> folder will contain
+        information about previous commits, branches, and where the
+        remote repos are located. Most repos will also contain one
+        or more files called <code>.gitignore</code>. A
+        <code>.gitignore</code> file tells git which files to skip
+        adding to the repository. You might add things like
         <code>*.class</code> files in <i>Java</i> or
         <code>*.o</code> files for <i>C</i> projects to your
         <code>.gitignore</code> file. Repos hosted on Github might
@@ -491,30 +481,47 @@
         the <i>commit history</i> stores all the incremental
         updates to the repository.</p>
 
-        <p>If your working on a team, each person will have their
-        own copy of the repo. This ensures that everyone&rsquo;s
-        repo has the same <i>commit history</i>. The commit you are
-        currently viewing is known as the <code>HEAD</code>.</p>
+        <p>The set of all the commits that have been added to the
+        repository is called the <i>commit history</i>. When people
+        <code>clone</code> the repository or <code>pull</code> to
+        update their local copy with changes from the remote, they
+        get a copy of the <i>commit history</i>. Each commit will
+        have a unique reference which is shared across
+        everyone&rsquo;s copy of the repository, allowing your
+        teammates to all jump to a specific commit across different
+        machines. Of course, you&rsquo;ll have to <code>add</code>,
+        <code>commit</code>, and <code>push</code> your changes to
+        the remote before your teammates will be able see them!
+        Below, we&rsquo;ll discuss how to do that.</p>
+
+        <p class="verse">Commands in this primer are referenced by
+        name. If you want to use these commands in the terminal,
+        you will have to preface them with <code>git</code>. So
+        <code>push</code> becomes <code>git push</code> in the
+        terminal. If you are using a git client, like <a href=
+        "https://desktop.github.com">Github Desktop</a> or <a href=
+        "https://gitkraken.com">GitKraken</a>, this primer tells
+        you which command to look for.<br /></p>
       </div>
     </div>
 
-    <div id="outline-container-org12c4a78" class="outline-2">
-      <h2 id="org12c4a78">Basic Operations</h2>
+    <div id="outline-container-orgc8f2151" class="outline-2">
+      <h2 id="orgc8f2151">Basic Operations</h2>
 
-      <div class="outline-text-2" id="text-org12c4a78">
+      <div class="outline-text-2" id="text-orgc8f2151">
         <p>In this section, we will outline the basic operations
         for interacting with git repos</p>
       </div>
 
-      <div id="outline-container-org1f65152" class="outline-3">
-        <h3 id="org1f65152">Copying a repo - <code>git
-        clone</code></h3>
+      <div id="outline-container-orgdd18bea" class="outline-3">
+        <h3 id="orgdd18bea">Copying a repo -
+        <code>clone</code></h3>
 
-        <div class="outline-text-3" id="text-org1f65152">
+        <div class="outline-text-3" id="text-orgdd18bea">
           <p>In order to use an existing repo, you must first
-          <i>clone</i> it to your local machine. The <code>git
-          clone</code> command takes the location of a repo and
-          copies it to your local directory along with all the
+          <i>clone</i> it to your local machine. The
+          <code>clone</code> command takes the location of a repo
+          and copies it to your local directory along with all the
           repo&rsquo;s history. The location provided to the
           <i>clone</i> command can either be an url for a remote
           repository or a file path, if you want to make a copy of
@@ -524,27 +531,33 @@
         </div>
       </div>
 
-      <div id="outline-container-org9d911d8" class="outline-3">
-        <h3 id="org9d911d8">Creating a repo - <code>git
-        init</code></h3>
+      <div id="outline-container-orgf1e0521" class="outline-3">
+        <h3 id="orgf1e0521">Creating a repo -
+        <code>init</code></h3>
 
-        <div class="outline-text-3" id="text-org9d911d8">
-          <p>To create a repo, you would perform a <code>git
-          init</code>. This creates a <code>.git</code> folder
-          inside the base directory of your repo with an empty
-          history. At this stage, the repo considers itself to be
-          empty. Even if there are files already in your directory,
-          they are not yet being <i>tracked</i>. A repo created
-          like this will have no remote target<sup><a id="fnr.1"
-          class="footref" href="#fn.1" name=
-          "fnr.1">1</a></sup>.</p>
+        <div class="outline-text-3" id="text-orgf1e0521">
+          <p>To create a repo, you would perform a
+          <code>init</code>. This creates a <code>.git</code>
+          folder inside the current directory, making it the base
+          directory of your new repo. At this stage, the repo
+          considers itself to be empty. Even if there are files
+          already in your directory, they won&rsquo;t be added to
+          the repository until you explicitly start <i>tracking</i>
+          them. In order to start <i>tracking</i> a file,
+          you&rsquo;ll have to <code>add</code> and
+          <code>commit</code> it to the repo. A repo created like
+          this will have no remote target<sup><a id="fnr.1" class=
+          "footref" href="#fn.1" name="fnr.1">1</a></sup> to push
+          changes to. Information about remotes and what files are
+          being tracked are all stored in the <code>.git</code>
+          folder.</p>
         </div>
       </div>
 
-      <div id="outline-container-org5963c2c" class="outline-3">
-        <h3 id="org5963c2c">Staging - <code>git add</code></h3>
+      <div id="outline-container-orgebed50f" class="outline-3">
+        <h3 id="orgebed50f">Staging - <code>add</code></h3>
 
-        <div class="outline-text-3" id="text-org5963c2c">
+        <div class="outline-text-3" id="text-orgebed50f">
           <p>Once you&rsquo;ve created or cloned your repo and
           edited some files, you will want to add your changes to
           the repo&rsquo;s history. This is a two step process. The
@@ -557,76 +570,101 @@
         </div>
       </div>
 
-      <div id="outline-container-org8e130c9" class="outline-3">
-        <h3 id="org8e130c9">Commit - <code>git commit</code></h3>
+      <div id="outline-container-org2cc2014" class="outline-3">
+        <h3 id="org2cc2014">Commit - <code>commit</code></h3>
 
-        <div class="outline-text-3" id="text-org8e130c9">
+        <div class="outline-text-3" id="text-org2cc2014">
           <p>To make your changes (semi) permanent, you make a
-          commit. As well as staged changes, a commit requires a
-          commit message describing its contents. It is important
+          commit. In addition to staged changes, a commit requires
+          a commit message describing its contents. It is important
           to leave descriptive commit messages so you and your
-          collaborators can more easily go back and identify what
-          happened if something goes wrong. Since commits are a
-          kind of &rsquo;unit&rsquo; in git repo, you may want to
-          split a single session of coding into multiple commits.
-          Just as with saving, it is good practice to commit
-          often<sup><a id="fnr.3" class="footref" href="#fn.3"
-          name="fnr.3">3</a></sup>. The commit gets assigned a
-          unique reference which can be used in other commands.</p>
+          collaborators can more easily go back and track what was
+          changed, when, and by whom if something goes wrong. Since
+          commits are a `unit&rsquo; in git repo, you may want to
+          split a set of your latest code changes into multiple
+          commits For example, grouping your commits by feature
+          would allow you to better trace issues or remove features
+          later on. Just as with saving, it is good practice to
+          commit often<sup><a id="fnr.3" class="footref" href=
+          "#fn.3" name="fnr.3">3</a></sup>. The commit gets
+          assigned a unique reference which can be used in other
+          commands.</p>
         </div>
       </div>
 
-      <div id="outline-container-org5491423" class="outline-3">
-        <h3 id="org5491423">Receive - <code>git pull</code></h3>
+      <div id="outline-container-orgcf7fa90" class="outline-3">
+        <h3 id="orgcf7fa90">Receive - <code>fetch/pull</code></h3>
 
-        <div class="outline-text-3" id="text-org5491423">
-          <p>In order to get updates that have been sent by others
-          (or by you from other machines), you would perform a
-          <code>git pull</code>. This gathers all the commits that
-          have been sent to the remote repository since your last
-          pull and sends them to you.</p>
+        <div class="outline-text-3" id="text-orgcf7fa90">
+          <p>Performing a <code>fetch</code> checks the remote
+          repository for any updates that have been sent by others
+          (or by you from other machines) that aren&rsquo;t present
+          in your copy of the repo. In order to actually get the
+          changes, you would perform a <code>pull</code>. This
+          gathers all updates to the remote repo since your last
+          <code>pull</code> and sends them to you, ensuring that
+          your view of the repo is up to date.</p>
         </div>
 
-        <div id="outline-container-orga903b96" class="outline-4">
-          <h4 id="orga903b96">Conflicts</h4>
+        <div id="outline-container-org5e8ab6c" class="outline-4">
+          <h4 id="org5e8ab6c">Conflicts</h4>
 
-          <div class="outline-text-4" id="text-orga903b96">
+          <div class="outline-text-4" id="text-org5e8ab6c">
             <p>In some cases, the commits on the remote server may
-            overlap with your own changes. If this is the case,
-            you&rsquo;ll have to perform a <code>merge</code>.
-            Merges can be stresfull and we&rsquo;ll talk about them
-            in more detail a little later. We will also discuss
-            some strategies to avoid unnecessary merging.</p>
+            overlap with your own changes. If this is the case when
+            you <code>pull</code>, you&rsquo;ll be prompted to
+            perform a <code>merge</code>. Merges can be stresfull
+            and we&rsquo;ll talk about them in more detail a little
+            later. We will also discuss some strategies to avoid
+            unnecessary merging.</p>
+
+            <p class="verse">Since <code>fetch</code> only checks
+            for changes, performing a <code>fetch</code> before you
+            <code>pull</code> can tell you whether you need to
+            prepare for a <code>merge</code>.<br /></p>
           </div>
         </div>
       </div>
 
-      <div id="outline-container-org8860e60" class="outline-3">
-        <h3 id="org8860e60">Send - <code>git push</code></h3>
+      <div id="outline-container-orgb3503f6" class="outline-3">
+        <h3 id="orgb3503f6">Send - <code>push</code></h3>
 
-        <div class="outline-text-3" id="text-org8860e60">
-          <p>Once you&rsquo;ve made some commits, you&rsquo;ll want
-          to synchronize them with your remote repo. In order to do
-          this, you&rsquo;ll need to perform a <code>git
-          push</code>. Pushing sends your revisions to the remote
-          repository and makes them available for other users to
-          add.</p>
+        <div class="outline-text-3" id="text-orgb3503f6">
+          <p>Once you&rsquo;ve made one or more commits,
+          you&rsquo;ll want to synchronize them with your remote
+          repo. In order to do this, you&rsquo;ll need to perform a
+          <code>push</code>. Pushing sends your revisions to the
+          remote repository and makes them available for other
+          users to add.</p>
+
+          <p class="verse">In general, synchronizing with the
+          remote regularly (<code>push</code> and
+          <code>pull</code>) will reduce the likelihood of
+          requiring a <code>merge</code>. There might be an
+          occassional reason to refrain from a <code>push</code> -
+          perhaps other members of your team are in the midst of
+          resolving some issue on the branch you&rsquo;ve been
+          working on and you don&rsquo;t want to add to the chaos
+          just yet. Some advanced git users will clean up their
+          local commit history and by combining commits or
+          rewriting the commit messages before pushing them to the
+          remote.<br /></p>
         </div>
 
-        <div id="outline-container-orgfdee6c4" class="outline-4">
-          <h4 id="orgfdee6c4">Conflicts</h4>
+        <div id="outline-container-org25c1d90" class="outline-4">
+          <h4 id="org25c1d90">Conflicts</h4>
 
-          <div class="outline-text-4" id="text-orgfdee6c4">
+          <div class="outline-text-4" id="text-org25c1d90">
             <p>Sometimes as you try to push, your remote repository
             will notify you that it has received a push from
             someone else since you last pulled from the repo. In
             situations like this, the remote repository will ask
-            you to perform a <code>git pull</code> first. You might
-            see an error like this:</p>
+            you to perform a <code>pull</code> first. You might see
+            an error like this:</p>
 
             <div class="org-src-container">
               <pre class="src src-bash">
- <span style=
+<span style=
 "color: #51afef; font-weight: bold;">!</span> <span style=
 "color: #51afef;">[</span>rejected<span style=
 "color: #51afef;">]</span>        master -&gt; master <span style=
@@ -661,30 +699,23 @@ hint: See the <span style=
       </div>
     </div>
 
-    <div id="outline-container-org729cc4c" class="outline-2">
-      <h2 id="org729cc4c">Branching and Merging</h2>
+    <div id="outline-container-org8cf41d9" class="outline-2">
+      <h2 id="org8cf41d9">Branching and Merging</h2>
 
-      <div class="outline-text-2" id="text-org729cc4c">
-        <div class="org-center">
-          <p><img class='invertible' src=
-          'https://imgs.xkcd.com/comics/algorithms.png' title=
-          "There was a schism in 2007, when a sect advocating OpenOffice created a fork of Sunday.xlsx and maintained it independently for several months. The efforts to reconcile the conflicting schedules led to the reinvention, within the cells of the spreadsheet, of modern version control."
-          alt='Algorithms' /></p>
-        </div>
-
+      <div class="outline-text-2" id="text-org8cf41d9">
         <p>A key features of git repos is the ability to create a
         branch of your code. Branches allow you switch between and
         develop multiple versions of your code simultaneously. If
         we decide that we want to combine two branches, we can
-        perform a <code>git merge</code>. Merging adds all the
-        commits from one branch to another and then a special merge
-        commit to indicate that the two branches have been
-        combined. This special merge commit can be used to resolve
-        any conflicts that might have arisen. We will talk about
-        merge conflicts a little later.</p>
+        perform a <code>merge</code>. Merging includes all the
+        commits from one branch into another and then caps them off
+        with a special merge commit to indicate that the two
+        branches have been combined. This special merge commit can
+        be used to resolve any conflicts that might have arisen. We
+        will talk about merge conflicts a little later.</p>
 
         <p>The most common use for branches would be developing a
-        new feature for piece of software with an existing stable
+        new feature for a piece of software with an existing stable
         version. You don&rsquo;t want to add unstable code to the
         version that other people might be using, so you can make a
         branch to work on your feature until it is ready. As
@@ -692,43 +723,35 @@ hint: See the <span style=
         sequence of <i>changes</i> to repo, not as files. That
         means in many cases changes made to code by different
         people can be automatically combined by git. This does
-        <i>NOT</i> mean that the combined files will work!</p>
+        <i>NOT</i> mean that the combined files will work! Make
+        sure you test your code after every <code>merge</code> (and
+        before every <code>push</code>).</p>
+
+        <p class="verse">Your git repo has a <code>HEAD</code>
+        pointer which refers to the revision/commit you&rsquo;re
+        currently working on. When you switch to a branch, your
+        <code>HEAD</code> pointer automatically gets moved to the
+        latest commit on that branch.<br /></p>
       </div>
 
-      <div id="outline-container-orga24475c" class="outline-3">
-        <h3 id="orga24475c">Creating branches - <code>git
-        branch</code></h3>
+      <div id="outline-container-org6d0f145" class="outline-3">
+        <h3 id="org6d0f145">A sample branching paradigm</h3>
 
-        <div class="outline-text-3" id="text-orga24475c">
-          <p><code>git branch</code> allows you to create a new
-          branch from the current commit. This does not create any
-          changes in the repository&rsquo;s history. Instead, you
-          just create a new <code>HEAD</code> pointer at the
-          existing commit. Once you&rsquo;ve created the new
-          branch, you will need to perform a <code>git checkout
-          -b</code> to make sure any future commits get added to
-          your newly created branch.</p>
-        </div>
-      </div>
-
-      <div id="outline-container-org261348e" class="outline-3">
-        <h3 id="org261348e">A sample branching paradigm</h3>
-
-        <div class="outline-text-3" id="text-org261348e">
+        <div class="outline-text-3" id="text-org6d0f145">
           <p>Most repositories have a single branch to start with,
           called <code>main</code><sup><a id="fnr.4" class=
           "footref" href="#fn.4" name="fnr.4">4</a></sup>. This
-          branch should contain the most recent
-          &rsquo;released&rsquo; version of your software. In early
-          the early stages of development, of course, it might not
-          be a finished product. Next, you might create a branch
-          called <code>develop</code> to track less stable
-          improvements to the software. Individual features will
-          spawn their own branches off of <code>develop</code> and
-          be merged back into <code>develop</code> as they are
-          completed. When the team is sufficiently sure that the
-          code on <code>develop</code> is ready for release, it can
-          be pushed to <code>main</code>.</p>
+          branch should contain the most recent `released&rsquo;
+          version of your software. In early the early stages of
+          development, of course, it might not be a finished
+          product. Next, you might create a branch called
+          <code>develop</code> to track less stable improvements to
+          the software. Individual features will spawn their own
+          branches off of <code>develop</code> and be merged back
+          into <code>develop</code> as they are completed. When the
+          team is sufficiently sure that the code on
+          <code>develop</code> is ready for release, it can be
+          pushed to <code>main</code>.</p>
 
           <p>In order to make the most of this paradigm for
           branching, it is a good idea to set <i>milestones</i>
@@ -737,7 +760,7 @@ hint: See the <span style=
           to the next milestone are left un-merged</p>
 
           <blockquote>
-            <p>When you perform a <code>git merge</code>, you are
+            <p>When you perform a <code>merge</code>, you are
             taking commits from another branch and adding them to
             the branch you are currently on. For example, if you
             want the branch <code>main</code> to include changes
@@ -749,23 +772,51 @@ hint: See the <span style=
         </div>
       </div>
 
-      <div id="outline-container-org8b55457" class="outline-3">
-        <h3 id="org8b55457">Conflicts!</h3>
+      <div id="outline-container-org838fe53" class="outline-3">
+        <h3 id="org838fe53">Creating branches -
+        <code>branch</code></h3>
 
-        <div class="outline-text-3" id="text-org8b55457">
-          <div class="org-center">
-            <p><img class='invertible' src=
-            'https://imgs.xkcd.com/comics/computer_problems.png'
-            title=
-            "This is how I explain computer problems to my cat. My cat usually seems happier than me."
-            alt='Computer Problems' /></p>
-          </div>
+        <div class="outline-text-3" id="text-org838fe53">
+          <p><code>branch</code> allows you to create a new branch
+          from the commit you are currently working on. This does
+          not create any new commits<sup><a id="fnr.5" class=
+          "footref" href="#fn.5" name="fnr.5">5</a></sup>. Instead,
+          you just move your <code>HEAD</code> pointer to the
+          existing commit. Once you&rsquo;ve created the new
+          branch, you will need to switch to the branch by
+          performing a <code>checkout --branch</code> to switch
+          your <code>HEAD</code> pointer to the tip of the branch
+          and make sure any future commits get added there.</p>
+        </div>
+      </div>
 
+      <div id="outline-container-org8759537" class="outline-3">
+        <h3 id="org8759537">Exploratory -
+        <code>checkout</code></h3>
+
+        <div class="outline-text-3" id="text-org8759537">
+          <p>A <code>checkout</code> takes a commit reference and
+          sets your <i>working directory</i> state to that commit.
+          <code>checkout --branch</code> can be used to switch to a
+          different branch.</p>
+
+          <p class="verse">If you checkout a specific commit
+          instead of a branch, you might get a scary looking
+          message informing you that you are in a <code>detached
+          HEAD state</code>. <a href=
+          "https://www.cloudbees.com/blog/git-detached-head">This</a>
+          is a good guide explaining how to handle this.<br /></p>
+        </div>
+      </div>
+
+      <div id="outline-container-orgbada2e4" class="outline-3">
+        <h3 id="orgbada2e4">Conflicts!</h3>
+
+        <div class="outline-text-3" id="text-orgbada2e4">
           <p>When pulling or merging changes from other branches,
           from time to time you will come across conflicts. These
-          occur when two commits change the same line in a manner
-          that git is unable to automatically compute. Merge
-          conflicts are one of the most panic-inducing events
+          occur when two commits change the same line in a file.
+          Merge conflicts are one of the most panic-inducing events
           associated with git. It is important to remember that all
           your work is safe as long as you&rsquo;ve been committing
           regularly.</p>
@@ -801,135 +852,150 @@ This line does not have a conflict.
 This line is a conflict.
 </pre>
 
-          <p>To resolve the conflict, all you have to do is edit
-          the file(s) in question to remove the lines containing
-          <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; main</code>,
-          <code>=======</code>, and
-          <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt; other-branch</code>.
-          Naturally, you&rsquo;ll want to also make sure that the
-          state of the file is correct. Often this means deleting
-          one of the alternatives as well. In some cases you might
-          want to keep some or all of both alternatives.</p>
+          <p>In order to resolve the conflict, you need to edit
+          each file with a conflict in it and remove the conflict
+          markers. Each conflict in delimited by three lines:</p>
 
-          <p>Once you&rsquo;re done with the edits, commit the
-          changes, and you&rsquo;re all done! Remember, there might
-          be more than one conflict in a merge. You can usually
-          find all the conflicts by searching for
-          <code>&lt;&lt;&lt;&lt;&lt;</code> in your code base - it
-          is a fairly uncommon string in code!</p>
+          <ol class="org-ol">
+            <li><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; main</code></li>
+
+            <li><code>=======</code></li>
+
+            <li><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+            other-branch</code></li>
+          </ol>
+
+          <p>The text between lines <code>a</code> and
+          <code>b</code> are the contents of the <code>main</code>
+          branch and the text between <code>b</code> and
+          <code>c</code> are the contents
+          <code>other-branch</code>. Most times, you&rsquo;ll just
+          choose either the text in <code>main</code> or the text
+          that was in <code>other-branch</code>. Occasionally, you
+          might have to choose lines from both or even add
+          additional lines. In some cases you might want to keep
+          some or all of both alternatives.</p>
+
+          <p>Once you&rsquo;re done with the edits, make sure to
+          test your code, commit the changes, and you&rsquo;re all
+          done! Remember, there might be more than one conflict in
+          a merge.</p>
+
+          <p class="verse">You can usually find all the conflicts
+          by searching for <code>&lt;&lt;&lt;&lt;&lt;</code> in
+          your code base - it is a fairly uncommon string in
+          code!<br /></p>
         </div>
       </div>
 
-      <div id="outline-container-org9e1f1f8" class="outline-3">
-        <h3 id="org9e1f1f8">Pull Requests</h3>
+      <div id="outline-container-org4dd0401" class="outline-3">
+        <h3 id="org4dd0401">Pull Requests</h3>
 
-        <div class="outline-text-3" id="text-org9e1f1f8">
+        <div class="outline-text-3" id="text-org4dd0401">
           <p>Pull requests are a special feature provided by some
-          git-hosting services (eg <a href=
+          git-hosting services (e.g. <a href=
           "https://github.com">github</a>, <a href=
-          "https://gitlab.com">gitlab</a>, etc) which help with the
-          latent potential chaos surrounding <code>git
-          merge</code>. A pull request allows the team to discuss
-          commits that are scheduled to be merged into a branch,
-          test the resulting merged code, and to add additional
-          commits to fix any issues, all before the merge occurs.
+          "https://gitlab.com">gitlab</a>) which help with the
+          latent potential chaos surrounding <code>merge</code>.
           Teams will often write-protect shared branches like
           <code>main</code> or <code>development</code> because
-          introducing errors to those branches can be disasterous
-          to the whole team. In such situations, a pull-request
-          might require the approval of multiple team members or of
-          product managers.</p>
+          introducing errors to those branches can be disastrous to
+          the whole team. In such situations, a pull-request might
+          require the approval of multiple team members or of
+          product managers. A pull request allows the team to
+          discuss commits that are requested to be merged into a
+          branch, test the resulting merged code, and to add
+          additional commits to fix any issues, all before the
+          merge occurs.</p>
         </div>
       </div>
     </div>
 
-    <div id="outline-container-orgc636f9b" class="outline-2">
-      <h2 id="orgc636f9b">Undoing things</h2>
+    <div id="outline-container-orgb5fc2b8" class="outline-2">
+      <h2 id="orgb5fc2b8">Undoing things</h2>
 
-      <div class="outline-text-2" id="text-orgc636f9b">
-        <p>A very important part of git is the ability to undo
-        commits that introduce errors or fall down
-        rabbit-holes.</p>
+      <div class="outline-text-2" id="text-orgb5fc2b8">
+        <p>Occassionally, you&rsquo;ll discover that a commit
+        introduces errors or the approach you&rsquo;ve been taking
+        to solving a problem is far more trouble than it is worth.
+        In situations like this, you might want to undo or discard
+        some changes you&rsquo;ve made.</p>
       </div>
 
-      <div id="outline-container-org71bfd21" class="outline-3">
-        <h3 id="org71bfd21">Temporary - <code>git stash</code></h3>
+      <div id="outline-container-org9a76f55" class="outline-3">
+        <h3 id="org9a76f55">Temporary - <code>stash</code></h3>
 
-        <div class="outline-text-3" id="text-org71bfd21">
-          <p><code>git stash</code> is a very useful command which
+        <div class="outline-text-3" id="text-org9a76f55">
+          <p><code>stash</code> is a very useful command which
           takes any <i>uncommitted</i> changes you&rsquo;ve made to
           the working directory and stores them safely. You can
-          later <code>git stash pop</code> to return the changes
+          later <code>stash pop</code> to return the changes
           themselves to the working directory. Note that if you
           move some changes to your <code>stash</code> and then
           make conflicting changes, then you will have to resolve
-          the conflicts. You can perform any number of other
-          actions between <code>git stash</code> and <code>git
-          stash pop</code>.</p>
+          the conflicts. After you&rsquo;ve performed a
+          <code>stash</code> to store some changes, you can
+          <code>pull</code>, <code>add</code>, <code>commit</code>,
+          and <code>merge</code> as necessary before using
+          <code>stash pop</code> to return your changes to the
+          working directory.</p>
+
+          <p class="verse"><code>stash</code> is a versatile
+          command that allows you to save multiple uncommitted
+          chunks as <code>WIP</code> or <i>work-in-progress</i>.
+          You can navigate the list of stashed modifications using
+          <code>stash list</code> and select a specific one to
+          restore using <code>stash apply</code>. You can even give
+          you stashed modifications descriptive commit
+          messages.<br /></p>
         </div>
       </div>
 
-      <div id="outline-container-org0d7547f" class="outline-3">
-        <h3 id="org0d7547f">Exploratory - <code>git
-        checkout</code></h3>
+      <div id="outline-container-orgcfef600" class="outline-3">
+        <h3 id="orgcfef600">UNDO! UNDO!! - <code>revert</code></h3>
 
-        <div class="outline-text-3" id="text-org0d7547f">
-          <p>A <code>git checkout</code> takes a commit reference
-          and sets your <i>working directory</i> state to that
-          commit<sup><a id="fnr.5" class="footref" href="#fn.5"
-          name="fnr.5">5</a></sup>. <code>git checkout -b</code>
-          can be used to switch to a different branch.</p>
-        </div>
-      </div>
-
-      <div id="outline-container-org290eddc" class="outline-3">
-        <h3 id="org290eddc">UNDO! UNDO!! - <code>git
-        revert</code></h3>
-
-        <div class="outline-text-3" id="text-org290eddc">
+        <div class="outline-text-3" id="text-orgcfef600">
           <p>Since each commit in git is a &rsquo;change&rsquo;,
           the natural way to undo things is to make the opposite
-          change. <code>git revert</code> will construct the
-          inverse of a specific revision and commit it. This is
-          great for two reasons. First, you haven&rsquo;t altered
-          the <i>commit history</i> - just added to it. Second, you
-          can target a specific commit from several days ago
-          without undoing all the work you&rsquo;ve done since!</p>
+          change. <code>revert</code> will construct the inverse of
+          a specific revision and commit it. This is great for two
+          reasons. First, you haven&rsquo;t altered the <i>commit
+          history</i> - just added to it. Second, you can target a
+          specific commit from several days ago without undoing all
+          the work you&rsquo;ve done since!</p>
         </div>
       </div>
     </div>
 
-    <div id="outline-container-org24b6dd2" class="outline-2">
-      <h2 id="org24b6dd2">Hints and FAQs</h2>
+    <div id="outline-container-org8b82158" class="outline-2">
+      <h2 id="org8b82158">Hints and FAQs</h2>
 
-      <div class="outline-text-2" id="text-org24b6dd2"></div>
+      <div class="outline-text-2" id="text-org8b82158"></div>
 
-      <div id="outline-container-orgbf50586" class="outline-3">
-        <h3 id="orgbf50586">Some strategies to avoid panic.</h3>
+      <div id="outline-container-org4eca2fe" class="outline-3">
+        <h3 id="org4eca2fe">Some strategies to avoid panic.</h3>
 
-        <div class="outline-text-3" id="text-orgbf50586"></div>
+        <div class="outline-text-3" id="text-org4eca2fe"></div>
 
-        <div id="outline-container-org326433f" class="outline-4">
-          <h4 id="org326433f">Commit messages</h4>
+        <div id="outline-container-org5a6bc39" class="outline-4">
+          <h4 id="org5a6bc39">Commit messages</h4>
 
-          <div class="outline-text-4" id="text-org326433f">
-            <div class="org-center">
-              <p><img class='invertible' src=
-              'https://imgs.xkcd.com/comics/git_commit.png' title=
-              "Merge branch 'asdfasjkfdlas/alkdjf' into sdkjfls-final"
-              alt='Git Commit' /></p>
-            </div>
-
+          <div class="outline-text-4" id="text-org5a6bc39">
             <p>Take the extra few minutes to write a complete
             commit message. Your teammates and future self will
-            thank you.</p>
+            thank you. Writing good commit messages is a practiced
+            art. An ideal commit message has a short one line
+            header and then a body that describes the the changes
+            in more detail. Consider going over all the files
+            you&rsquo;ve changed in the commit and leaving a short
+            summary of what was changed and why.</p>
           </div>
         </div>
 
-        <div id="outline-container-org788a2e0" class="outline-4">
-          <h4 id="org788a2e0">Work on your own branch</h4>
+        <div id="outline-container-orga5ad166" class="outline-4">
+          <h4 id="orga5ad166">Work on your own branch</h4>
 
-          <div class="outline-text-4" id="text-org788a2e0">
+          <div class="outline-text-4" id="text-orga5ad166">
             <p>Merging your code with someone else&rsquo;s code is
             one of the more stressful processes when it comes to
             working in a team. While it is important to make sure
@@ -940,16 +1006,17 @@ This line is a conflict.
             code until actually necessary. Many teams will perform
             integration tests on a regular basis to ensure that
             teammates don&rsquo;t diverge too far. You will still
-            have to perform the merges, but at least you can avoid
+            have to perform the merges from time to time, but at
+            least you can minimize the frequency and complexity of
             unexpected merge conflicts and bugs that manifest from
-            unexpected combinations of code.</p>
+            combining different bodies of code.</p>
           </div>
         </div>
 
-        <div id="outline-container-org0ba14de" class="outline-4">
-          <h4 id="org0ba14de">Test before you merge</h4>
+        <div id="outline-container-org3ebd5c7" class="outline-4">
+          <h4 id="org3ebd5c7">Test before you merge</h4>
 
-          <div class="outline-text-4" id="text-org0ba14de">
+          <div class="outline-text-4" id="text-org3ebd5c7">
             <p>Having a number of commits between working versions
             of code is not usually a problem, however, it is a good
             idea to test your code thoroughly before pushing or
@@ -957,10 +1024,10 @@ This line is a conflict.
           </div>
         </div>
 
-        <div id="outline-container-orgf2e6914" class="outline-4">
-          <h4 id="orgf2e6914">Avoiding Conflicts</h4>
+        <div id="outline-container-org7a1f6af" class="outline-4">
+          <h4 id="org7a1f6af">Avoiding Conflicts</h4>
 
-          <div class="outline-text-4" id="text-orgf2e6914">
+          <div class="outline-text-4" id="text-org7a1f6af">
             <p>The best way to deal with conflicts is to have as
             few of them as possible. Working on separate branches
             reduces the frequency with which you&rsquo;ll have to
@@ -978,45 +1045,31 @@ This line is a conflict.
         </div>
       </div>
 
-      <div id="outline-container-org7af27da" class="outline-3">
-        <h3 id="org7af27da">Help, I accidentally added or committed
-        something I shouldn&rsquo;t have!</h3>
+      <div id="outline-container-orga7e20aa" class="outline-3">
+        <h3 id="orga7e20aa">Help, I need to remove a file from the
+        repository!</h3>
 
-        <div class="outline-text-3" id="text-org7af27da">
+        <div class="outline-text-3" id="text-orga7e20aa">
           <p><code>git rm</code> will untrack a file that you have
-          committed to the repository by accident. If you
-          don&rsquo;t want to delete the file altogether, you can
-          use the <code>--cached</code> option</p>
+          committed to the repository and delete the file from your
+          disk. If you don&rsquo;t want to delete the file
+          altogether, you can use the <code>git rm --cached</code>
+          option. The file will be removed from the repo in your
+          next commit but a copy will remain in your working
+          directory. This option is great if you accidentally
+          commit a file containing, say, private notes that
+          don&rsquo;t belong in the team&rsquo;s repository.</p>
         </div>
       </div>
 
-      <div id="outline-container-orga042347" class="outline-3">
-        <h3 id="orga042347">Help, I&rsquo;ve made some changes but
-        I want to move them out of the way!</h3>
+      <div id="outline-container-orgae655b8" class="outline-3">
+        <h3 id="orgae655b8">Help, I staged a file for commit but I
+        don&rsquo;t want to commit it!</h3>
 
-        <div class="outline-text-3" id="text-orga042347">
-          <p><code>git stash</code>!</p>
-        </div>
-      </div>
-
-      <div id="outline-container-org28831e5" class="outline-3">
-        <h3 id="org28831e5">Next Time</h3>
-
-        <div class="outline-text-3" id="text-org28831e5">
-          <p>In the next article, we will discuss some of the
-          additional features GitHub brings to git. Pull requests,
-          issues, project boards, and continuous integration are
-          great tools that allow teams to collaborate more
-          efficiently and painlessly.</p>
-        </div>
-      </div>
-
-      <div id="outline-container-org561f0df" class="outline-3">
-        <h3 id="org561f0df">Comics</h3>
-
-        <div class="outline-text-3" id="text-org561f0df">
-          <p>All comics were taken from the fabulous <a href=
-          "https://xkcd.com">XKCD</a>.</p>
+        <div class="outline-text-3" id="text-orgae655b8">
+          <p><code>reset HEAD [filename]</code> will reset the
+          index. Your local changes will still be on disk, but the
+          file won&rsquo;t be committed.</p>
         </div>
       </div>
     </div>
@@ -1031,8 +1084,10 @@ This line is a conflict.
 
           <div class="footpara">
             <p class="footpara">You can manually set a remote
-            target using <code>git remote add [name]
-            [url]</code></p>
+            target using <code>remote add [name] [url]</code>. You
+            can also have multiple remote locations, for example, a
+            Github repo for collaboration and a private server
+            where you deploy your code.</p>
           </div>
         </div>
 
@@ -1053,12 +1108,12 @@ This line is a conflict.
           <div class="footpara">
             <p class="footpara">Sometimes it might feel like
             committing too often will make the history look messy.
-            There are advanced commands such as <code>git rebase
-            -i</code> which allow you to rewrite the history. This
-            is a dangerous operation and can break things for other
-            people. There are very few ways to completely destroy a
-            git repo and misuse of history rewriting is basically
-            it.</p>
+            There are advanced commands such as <code>rebase
+            --interactive</code> which allow you to rewrite the
+            history. This is a dangerous operation and can break
+            things for other people. There are very few ways to
+            completely destroy a git repo and misuse of history
+            rewriting is basically it.</p>
           </div>
         </div>
 
@@ -1081,12 +1136,10 @@ This line is a conflict.
           "fn.5">5</a></sup>
 
           <div class="footpara">
-            <p class="footpara">If you checkout a specific commit
-            instead of a branch, you might get a scary looking
-            message informing you that you are in a <code>detached
-            HEAD state</code>. <a href=
-            "https://www.cloudbees.com/blog/git-detached-head">This</a>
-            is a good guide explaining how to handle this.</p>
+            <p class="footpara">This is a fine distinction - git
+            has now added information about your new branch, but
+            that information is not stored as a commit. No files
+            have been changed.</p>
           </div>
         </div>
       </div>
@@ -1096,7 +1149,7 @@ This line is a conflict.
   <div id="postamble" class="status">
     <p class="author">Author: Rik Bose</p>
 
-    <p class="date">Created: 2021-01-01 Fri 17:27</p>
+    <p class="date">Created: 2021-01-10 Sun 20:27</p>
   </div>
 </body>
 </html>
